@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:spider_man_delivery_app/dashboard.dart';
+import 'package:spider_man_delivery_app/onboardscreen3.dart';
 import 'package:spider_man_delivery_app/resetpassword.dart';
 import 'package:spider_man_delivery_app/signup.dart';
 
@@ -15,7 +16,13 @@ class _SignInState extends State<SignIn> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: const Icon(Icons.arrow_back_ios),
+        leading:
+        IconButton(onPressed: (){
+          Navigator.push(
+              context,
+          MaterialPageRoute(builder: (BuildContext context) => OnBoardScreen3()));
+        }, icon: const Icon(Icons.arrow_back_ios)),
+        //Icon(Icons.arrow_back_ios),
         title: const Text("Sign In"),
         centerTitle: true,
       ),
@@ -40,6 +47,7 @@ class _SignInState extends State<SignIn> {
                     const Padding(
                       padding: EdgeInsets.only(left: 8.0),
                       child: TextField(
+                        keyboardType: TextInputType.number,
                         decoration: InputDecoration(
                           border: InputBorder.none,
                           hintText: "Phone Number",
@@ -52,13 +60,17 @@ class _SignInState extends State<SignIn> {
                 const SizedBox(height: 30,),
                 Material(
                   elevation: 4,
-                  color: Colors.transparent,
                   child: Container(
                     height: 40,
                     width: double.infinity,
-                    decoration: BoxDecoration(
-
+                    /**decoration: BoxDecoration(
+                      color: Colors.grey[300],
                       borderRadius: BorderRadius.circular(8.0),
+                    ),**/
+                    decoration: ShapeDecoration(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8),
+                      ),
                       color: Colors.grey[300],
                     ),
                     child:
@@ -66,9 +78,10 @@ class _SignInState extends State<SignIn> {
                       padding: const EdgeInsets.only(left: 8.0),
                       child: Row(
                         children: [
-                          const Expanded(
+                          Expanded(
                             child: TextField(
-                              decoration: InputDecoration(
+                              obscureText: _isobscured,
+                              decoration: const InputDecoration(
                                   border: InputBorder.none,
                                   hintText: "Password",
                                   icon: Icon(Icons.mail),

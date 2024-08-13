@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:spider_man_delivery_app/onboardscreen1.dart';
 import 'package:spider_man_delivery_app/onboardscreen2.dart';
 import 'package:spider_man_delivery_app/onboardscreen3.dart';
@@ -15,6 +16,8 @@ class _SwipeCarouselState extends State<SwipeCarousel> {
  final _controller = PageController();
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
     return Scaffold(
       backgroundColor: Colors.white,
       body: Padding(
@@ -32,8 +35,8 @@ class _SwipeCarouselState extends State<SwipeCarousel> {
                   ],
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.only(top: 600,left: 170),
+              Align(
+                alignment: Alignment(0,0.7),
                 child: SmoothPageIndicator(
                     controller: _controller,
                     count: 3,
