@@ -13,8 +13,8 @@ class SavePlaces extends StatelessWidget {
         leading: IconButton(onPressed: (){
           Navigator.pop(context);
         },
-            icon: Icon(Icons.arrow_back_ios_new)),
-        title: Text("Save Places"),
+            icon: const Icon(Icons.arrow_back_ios_new)),
+        title: const Text("Save Places"),
         centerTitle: true,
       ),
       body: Padding(
@@ -28,8 +28,8 @@ class SavePlaces extends StatelessWidget {
                 borderRadius: BorderRadius.circular(8),
                 color: Colors.grey[300],
               ),
-              child: Padding(
-                padding: const EdgeInsets.only(left: 16.0),
+              child: const Padding(
+                padding: EdgeInsets.only(left: 16.0),
                 child: Align(
                   alignment: Alignment.centerLeft,
                     child: Text("PK 14")),
@@ -43,8 +43,8 @@ class SavePlaces extends StatelessWidget {
                 borderRadius: BorderRadius.circular(8),
                 color: Colors.grey[300],
               ),
-              child: Padding(
-                padding: const EdgeInsets.only(left: 16.0),
+              child: const Padding(
+                padding: EdgeInsets.only(left: 16.0),
                 child: Align(
                     alignment: Alignment.centerLeft,
                     child: Text("Bonammoussadi")),
@@ -58,8 +58,8 @@ class SavePlaces extends StatelessWidget {
                 borderRadius: BorderRadius.circular(8),
                 color: Colors.grey[300],
               ),
-              child: Padding(
-                padding: const EdgeInsets.only(left: 16.0),
+              child: const Padding(
+                padding: EdgeInsets.only(left: 16.0),
                 child: Align(
                     alignment: Alignment.centerLeft,
                     child: Text("Bonapriso")),

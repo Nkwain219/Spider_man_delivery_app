@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:spider_man_delivery_app/Calls.dart';
-import 'package:spider_man_delivery_app/chats.dart';
-import 'package:spider_man_delivery_app/history.dart';
-import 'package:spider_man_delivery_app/info.dart';
-import 'package:spider_man_delivery_app/pickuplocation.dart';
-import 'package:spider_man_delivery_app/profile.dart';
-import 'package:spider_man_delivery_app/saveplaces.dart';
-import 'package:spider_man_delivery_app/send.dart';
-import 'package:spider_man_delivery_app/setting.dart';
-import 'package:spider_man_delivery_app/signin.dart';
+import 'package:spider_man_delivery_app/dashboard/Calls.dart';
+import 'package:spider_man_delivery_app/dashboard/chats.dart';
+import 'package:spider_man_delivery_app/dashboard/history.dart';
+import 'package:spider_man_delivery_app/dashboard/info.dart';
+import 'package:spider_man_delivery_app/dashboard/pickuplocation.dart';
+import 'package:spider_man_delivery_app/dashboard/profile.dart';
+import 'package:spider_man_delivery_app/dashboard/saveplaces.dart';
+import 'package:spider_man_delivery_app/dashboard/send.dart';
+import 'package:spider_man_delivery_app/dashboard/setting.dart';
+import 'package:spider_man_delivery_app/getting_started/signin.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -75,7 +75,7 @@ class HomePage extends StatelessWidget {
                            Navigator.pop(context);
                          }, icon: const Icon(Icons.close,size: 30,),
                          style: ButtonStyle(
-                           textStyle: MaterialStateProperty.all<TextStyle>(const TextStyle(fontWeight: FontWeight.bold)),
+                           textStyle: WidgetStateProperty.all<TextStyle>(const TextStyle(fontWeight: FontWeight.bold)),
                          ),),
                          const SizedBox(width: 50,),
                          Text("Menu",style: TextStyle(color: drawerTextColor,fontSize: 20,fontWeight: FontWeight.bold)),
@@ -238,7 +238,7 @@ class HomePage extends StatelessWidget {
                               SizedBox(width: screenWidth * 0.42,),
                               IconButton(onPressed: (){
                                 Navigator.push(context,
-                                    MaterialPageRoute(builder: (BuildContext context) => PickUpLocation()));
+                                    MaterialPageRoute(builder: (BuildContext context) => const PickUpLocation()));
                               }, icon: const Icon(Icons.arrow_forward_ios_outlined,color: Colors.red,) )
                               //Icon(Icons.arrow_forward_ios_outlined,color: Colors.red,)
                             ],

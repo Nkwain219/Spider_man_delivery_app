@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:spider_man_delivery_app/changepassword.dart';
-import 'package:spider_man_delivery_app/profiledetails.dart';
-import 'package:spider_man_delivery_app/setting.dart';
+import 'package:spider_man_delivery_app/dashboard/changepassword.dart';
+import 'package:spider_man_delivery_app/dashboard/profiledetails.dart';
+import 'package:spider_man_delivery_app/dashboard/setting.dart';
 
 class Profile extends StatelessWidget {
   const Profile({super.key});

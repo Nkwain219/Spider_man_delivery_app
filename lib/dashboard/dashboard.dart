@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:spider_man_delivery_app/Calls.dart';
-import 'package:spider_man_delivery_app/history.dart';
-import 'package:spider_man_delivery_app/home.dart';
+import 'package:spider_man_delivery_app/dashboard/Calls.dart';
+import 'package:spider_man_delivery_app/dashboard/history.dart';
+import 'package:spider_man_delivery_app/dashboard/home.dart';
 
 class DashBoard extends StatefulWidget {
   const DashBoard({super.key});

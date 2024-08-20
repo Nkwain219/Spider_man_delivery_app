@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:spider_man_delivery_app/signin.dart';
+import 'package:spider_man_delivery_app/getting_started/signin.dart';
 
 class OnBoardScreen1 extends StatelessWidget {
   const OnBoardScreen1({super.key});

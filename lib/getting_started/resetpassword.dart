@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:spider_man_delivery_app/resetpassword2.dart';
+import 'package:spider_man_delivery_app/getting_started/resetpassword2.dart';
 
 class ResetPassword extends StatelessWidget {
   const ResetPassword({super.key});

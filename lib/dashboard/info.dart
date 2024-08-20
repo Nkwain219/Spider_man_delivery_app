@@ -19,8 +19,8 @@ class _InfoState extends State<Info> {
         leading: IconButton(onPressed: (){
           Navigator.pop(context,);
         },
-            icon: Icon(Icons.arrow_back_ios_new)),
-        title: Text("FAQ"),
+            icon: const Icon(Icons.arrow_back_ios_new)),
+        title: const Text("FAQ"),
         centerTitle: true,
       ),
       body: Padding(
@@ -31,7 +31,7 @@ class _InfoState extends State<Info> {
               height: screenHeight * 0.05,
               width: screenWidth,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.only(topLeft: Radius.circular(8),
+                borderRadius: const BorderRadius.only(topLeft: Radius.circular(8),
                     topRight: Radius.circular(8)),
                 color: Colors.grey[300],
               ),
@@ -45,7 +45,7 @@ class _InfoState extends State<Info> {
                   padding: const EdgeInsets.only(left: 16.0,right: 16),
                   child: Row(
                     children: [
-                      Expanded(child: Text("How do I place an Order")),
+                      const Expanded(child: Text("How do I place an Order")),
                       Icon(_isExpanded? Icons.keyboard_arrow_up : Icons.keyboard_arrow_down,color: Colors.red,)
                     ],
                   ),
@@ -58,10 +58,10 @@ class _InfoState extends State<Info> {
                 width: screenWidth,
                 decoration: BoxDecoration(
                   color: Colors.grey[300],
-                  borderRadius: BorderRadius.only(bottomLeft: Radius.circular(8),bottomRight: Radius.circular(8)),
+                  borderRadius: const BorderRadius.only(bottomLeft: Radius.circular(8),bottomRight: Radius.circular(8)),
                 ),
-                child: Padding(
-                  padding: const EdgeInsets.only(left:16.0),
+                child: const Padding(
+                  padding: EdgeInsets.only(left:16.0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -84,7 +84,7 @@ class _InfoState extends State<Info> {
               height: screenHeight * 0.05,
               width: screenWidth,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.only(topLeft: Radius.circular(8),
+                borderRadius: const BorderRadius.only(topLeft: Radius.circular(8),
                     topRight: Radius.circular(8)),
                 color: Colors.grey[300],
               ),
@@ -98,7 +98,7 @@ class _InfoState extends State<Info> {
                   padding: const EdgeInsets.only(left: 16.0,right: 16),
                   child: Row(
                     children: [
-                      Expanded(child: Text("How long does it take to deliver a product?")),
+                      const Expanded(child: Text("How long does it take to deliver a product?")),
                       Icon(_isExpanded? Icons.keyboard_arrow_up : Icons.keyboard_arrow_down,color: Colors.red,)
                     ],
                   ),
@@ -111,10 +111,10 @@ class _InfoState extends State<Info> {
                 width: screenWidth,
                 decoration: BoxDecoration(
                   color: Colors.grey[300],
-                  borderRadius: BorderRadius.only(bottomLeft: Radius.circular(8),bottomRight: Radius.circular(8)),
+                  borderRadius: const BorderRadius.only(bottomLeft: Radius.circular(8),bottomRight: Radius.circular(8)),
                 ),
-                child: Padding(
-                  padding: const EdgeInsets.only(left:16.0),
+                child: const Padding(
+                  padding: EdgeInsets.only(left:16.0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -137,7 +137,7 @@ class _InfoState extends State<Info> {
               height: screenHeight * 0.05,
               width: screenWidth,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.only(topLeft: Radius.circular(8),
+                borderRadius: const BorderRadius.only(topLeft: Radius.circular(8),
                     topRight: Radius.circular(8)),
                 color: Colors.grey[300],
               ),
@@ -151,7 +151,7 @@ class _InfoState extends State<Info> {
                   padding: const EdgeInsets.only(left: 16.0,right: 16),
                   child: Row(
                     children: [
-                      Expanded(child: Text("How can I track my Order?")),
+                      const Expanded(child: Text("How can I track my Order?")),
                       Icon(_isExpanded? Icons.keyboard_arrow_up : Icons.keyboard_arrow_down,color: Colors.red,)
                     ],
                   ),
@@ -164,10 +164,10 @@ class _InfoState extends State<Info> {
                 width: screenWidth,
                 decoration: BoxDecoration(
                   color: Colors.grey[300],
-                  borderRadius: BorderRadius.only(bottomLeft: Radius.circular(8),bottomRight: Radius.circular(8)),
+                  borderRadius: const BorderRadius.only(bottomLeft: Radius.circular(8),bottomRight: Radius.circular(8)),
                 ),
-                child: Padding(
-                  padding: const EdgeInsets.only(left:16.0),
+                child: const Padding(
+                  padding: EdgeInsets.only(left:16.0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [

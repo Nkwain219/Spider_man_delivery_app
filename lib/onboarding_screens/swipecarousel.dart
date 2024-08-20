@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:spider_man_delivery_app/onboardscreen1.dart';
-import 'package:spider_man_delivery_app/onboardscreen2.dart';
-import 'package:spider_man_delivery_app/onboardscreen3.dart';
+import 'package:spider_man_delivery_app/onboarding_screens/onboardscreen1.dart';
+import 'package:spider_man_delivery_app/onboarding_screens/onboardscreen2.dart';
+import 'package:spider_man_delivery_app/onboarding_screens/onboardscreen3.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class SwipeCarousel extends StatefulWidget {
@@ -36,7 +35,7 @@ class _SwipeCarouselState extends State<SwipeCarousel> {
                 ),
               ),
               Align(
-                alignment: Alignment(0,0.7),
+                alignment: const Alignment(0,0.7),
                 child: SmoothPageIndicator(
                     controller: _controller,
                     count: 3,

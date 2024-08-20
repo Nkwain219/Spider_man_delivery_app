@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:spider_man_delivery_app/messages.dart';
+import 'package:spider_man_delivery_app/dashboard/messages.dart';
 
 class ChatPage extends StatelessWidget {
   const ChatPage({super.key});

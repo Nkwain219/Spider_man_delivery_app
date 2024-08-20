@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:spider_man_delivery_app/paymentmethod.dart';
+import 'package:spider_man_delivery_app/dashboard/paymentmethod.dart';
 
 class NewOffer extends StatelessWidget {
   const NewOffer({super.key});
@@ -12,8 +12,8 @@ class NewOffer extends StatelessWidget {
       appBar: AppBar(
         leading: IconButton(onPressed: (){
           Navigator.pop(context);
-        }, icon: Icon(Icons.arrow_back_ios_new)),
-        title: Text("New Offer"),
+        }, icon: const Icon(Icons.arrow_back_ios_new)),
+        title: const Text("New Offer"),
         centerTitle: true,
       ),
       body: Padding(
@@ -21,7 +21,7 @@ class NewOffer extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text("ID",style: TextStyle(fontWeight: FontWeight.bold),),
+            const Text("ID",style: TextStyle(fontWeight: FontWeight.bold),),
             Container(
               height: screenHeight * 0.05,
               width: screenWidth,
@@ -29,14 +29,14 @@ class NewOffer extends StatelessWidget {
                 borderRadius: BorderRadius.circular(8),
                 color: Colors.grey[300],
               ),
-              child: Padding(
-                padding: const EdgeInsets.only(left: 16.0),
+              child: const Padding(
+                padding: EdgeInsets.only(left: 16.0),
                 child: Align(alignment: Alignment.centerLeft,
                     child: Text("123959809")),
               ),
             ),
             SizedBox(height:screenHeight * 0.02,),
-            Text("Pick Up",style: TextStyle(fontWeight: FontWeight.bold),),
+            const Text("Pick Up",style: TextStyle(fontWeight: FontWeight.bold),),
             Container(
               height: screenHeight * 0.05,
               width: screenWidth,
@@ -44,14 +44,14 @@ class NewOffer extends StatelessWidget {
                 borderRadius: BorderRadius.circular(8),
                 color: Colors.grey[300],
               ),
-              child: Padding(
-                padding: const EdgeInsets.only(left: 16.0),
+              child: const Padding(
+                padding: EdgeInsets.only(left: 16.0),
                 child: Align(alignment: Alignment.centerLeft,
                     child: Text("Diedo")),
               ),
             ),
             SizedBox(height:screenHeight * 0.02,),
-            Text("Drop Up",style: TextStyle(fontWeight: FontWeight.bold),),
+            const Text("Drop Up",style: TextStyle(fontWeight: FontWeight.bold),),
             Container(
               height: screenHeight * 0.05,
               width: screenWidth,
@@ -59,14 +59,14 @@ class NewOffer extends StatelessWidget {
                 borderRadius: BorderRadius.circular(8),
                 color: Colors.grey[300],
               ),
-              child: Padding(
-                padding: const EdgeInsets.only(left: 16.0),
+              child: const Padding(
+                padding: EdgeInsets.only(left: 16.0),
                 child: Align(alignment: Alignment.centerLeft,
                     child: Text("PK 14")),
               ),
             ),
             SizedBox(height:screenHeight * 0.02,),
-            Text("Brief Describtion",style: TextStyle(fontWeight: FontWeight.bold),),
+            const Text("Brief Describtion",style: TextStyle(fontWeight: FontWeight.bold),),
             Container(
               height: screenHeight * 0.05,
               width: screenWidth,
@@ -74,14 +74,14 @@ class NewOffer extends StatelessWidget {
                 borderRadius: BorderRadius.circular(8),
                 color: Colors.grey[300],
               ),
-              child: Padding(
-                padding: const EdgeInsets.only(left: 16.0),
+              child: const Padding(
+                padding: EdgeInsets.only(left: 16.0),
                 child: Align(alignment: Alignment.centerLeft,
                     child: Text("Second gate after Campus B IUG.")),
               ),
             ),
             SizedBox(height:screenHeight * 0.02,),
-            Text("Vehicle Preferences",style: TextStyle(fontWeight: FontWeight.bold),),
+            const Text("Vehicle Preferences",style: TextStyle(fontWeight: FontWeight.bold),),
             Container(
               height: screenHeight * 0.05,
               width: screenWidth,
@@ -89,8 +89,8 @@ class NewOffer extends StatelessWidget {
                 borderRadius: BorderRadius.circular(8),
                 color: Colors.grey[300],
               ),
-              child: Padding(
-                padding: const EdgeInsets.only(left: 16.0),
+              child: const Padding(
+                padding: EdgeInsets.only(left: 16.0),
                 child: Align(alignment: Alignment.centerLeft,
                     child: Text("Bike")),
               ),

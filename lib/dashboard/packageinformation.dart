@@ -1,7 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:spider_man_delivery_app/newoffer.dart';
+import 'package:spider_man_delivery_app/dashboard/newoffer.dart';
 
 class PackageInformation extends StatefulWidget {
   const PackageInformation({super.key});
@@ -22,8 +20,8 @@ class _PackageInformationState extends State<PackageInformation> {
         leading: IconButton(onPressed: (){
           Navigator.pop(context);
         },
-            icon: Icon(Icons.arrow_back_ios_new) ),
-        title: Text("Package Information"),
+            icon: const Icon(Icons.arrow_back_ios_new) ),
+        title: const Text("Package Information"),
         centerTitle: true,
       ),
       body:
@@ -33,12 +31,12 @@ class _PackageInformationState extends State<PackageInformation> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("Category",style: TextStyle(fontWeight: FontWeight.bold),),
+              const Text("Category",style: TextStyle(fontWeight: FontWeight.bold),),
               Container(
                 height: screenHeight * 0.05,
                 width: screenWidth,
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.only(topLeft: Radius.circular(8),
+                  borderRadius: const BorderRadius.only(topLeft: Radius.circular(8),
                   topRight: Radius.circular(8)),
                   color: Colors.grey[300],
                 ),
@@ -52,7 +50,7 @@ class _PackageInformationState extends State<PackageInformation> {
                     padding: const EdgeInsets.only(left: 16.0,right: 16),
                     child: Row(
                       children: [
-                        Expanded(child: Text("Electronics")),
+                        const Expanded(child: Text("Electronics")),
                         Icon(_Expanded? Icons.keyboard_arrow_up : Icons.keyboard_arrow_down,color: Colors.red,)
                       ],
                     ),
@@ -65,34 +63,34 @@ class _PackageInformationState extends State<PackageInformation> {
                   width: screenWidth,
                   decoration: BoxDecoration(
                     color: Colors.grey[300],
-                    borderRadius: BorderRadius.only(bottomLeft: Radius.circular(8),bottomRight: Radius.circular(8)),
+                    borderRadius: const BorderRadius.only(bottomLeft: Radius.circular(8),bottomRight: Radius.circular(8)),
                   ),
                   child: Padding(
                     padding: const EdgeInsets.only(left:16.0),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text("Electronics"),
+                        const Text("Electronics"),
                         SizedBox(height: screenHeight * 0.005,),
-                        Text("Electronics"),
+                        const Text("Electronics"),
                         SizedBox(height: screenHeight * 0.005,),
-                        Text("Electronics"),
+                        const Text("Electronics"),
                         SizedBox(height: screenHeight * 0.005,),
-                        Text("Electronics"),
+                        const Text("Electronics"),
                         SizedBox(height: screenHeight * 0.005,),
-                        Text("Electronics"),
+                        const Text("Electronics"),
                       ],
                     ),
                   ),
                 ),
               ),
               SizedBox(height: screenHeight * 0.02,),
-              Text("Weight",style: TextStyle(fontWeight: FontWeight.bold),),
+              const Text("Weight",style: TextStyle(fontWeight: FontWeight.bold),),
               Container(
                 height: screenHeight * 0.05,
                 width: screenWidth,
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.only(topLeft: Radius.circular(8),
+                  borderRadius: const BorderRadius.only(topLeft: Radius.circular(8),
                       topRight: Radius.circular(8)),
                   color: Colors.grey[300],
                 ),
@@ -106,7 +104,7 @@ class _PackageInformationState extends State<PackageInformation> {
                     padding: const EdgeInsets.only(left: 16.0,right: 16),
                     child: Row(
                       children: [
-                        Expanded(child: Text("0kg-5.0kg")),
+                        const Expanded(child: Text("0kg-5.0kg")),
                         Icon(_isExpanded? Icons.keyboard_arrow_up : Icons.keyboard_arrow_down,color: Colors.red,)
                       ],
                     ),
@@ -119,29 +117,29 @@ class _PackageInformationState extends State<PackageInformation> {
                   width: screenWidth,
                   decoration: BoxDecoration(
                     color: Colors.grey[300],
-                    borderRadius: BorderRadius.only(bottomLeft: Radius.circular(8),bottomRight: Radius.circular(8)),
+                    borderRadius: const BorderRadius.only(bottomLeft: Radius.circular(8),bottomRight: Radius.circular(8)),
                   ),
                   child: Padding(
                     padding: const EdgeInsets.only(left:16.0),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text("0.0kg-10.0kg"),
+                        const Text("0.0kg-10.0kg"),
                         SizedBox(height: screenHeight * 0.005,),
-                        Text("10.0kg-20.0kg"),
+                        const Text("10.0kg-20.0kg"),
                         SizedBox(height: screenHeight * 0.005,),
-                        Text("30.0kg-40.0kg"),
+                        const Text("30.0kg-40.0kg"),
                         SizedBox(height: screenHeight * 0.005,),
-                        Text("50kg-60.0kg"),
+                        const Text("50kg-60.0kg"),
                         SizedBox(height: screenHeight * 0.005,),
-                        Text("70kg-80.0kg"),
+                        const Text("70kg-80.0kg"),
                       ],
                     ),
                   ),
                 ),
               ),
               SizedBox(height: screenHeight * 0.02,),
-              Text("Describtion",style: TextStyle(fontWeight: FontWeight.bold),),
+              const Text("Describtion",style: TextStyle(fontWeight: FontWeight.bold),),
               Container(
                 height: screenHeight * 0.1,
                 width: screenWidth,
@@ -149,9 +147,9 @@ class _PackageInformationState extends State<PackageInformation> {
                   borderRadius: BorderRadius.circular(8),
                   color: Colors.grey[300],
                 ),
-                child: Expanded(
+                child: const Expanded(
                   child: Padding(
-                    padding: const EdgeInsets.only(left: 8.0),
+                    padding: EdgeInsets.only(left: 8.0),
                     child: TextField(
                       decoration: InputDecoration(
                         border: InputBorder.none,
@@ -164,8 +162,8 @@ class _PackageInformationState extends State<PackageInformation> {
               SizedBox(height: screenHeight * 0.02,),
               Row(
                 children: [
-                  Expanded(child: Text("Vehicle Preference",style: TextStyle(fontWeight: FontWeight.bold),)),
-                  IconButton(onPressed: (){}, icon: Icon(Icons.more_vert,color: Colors.red,)),
+                  const Expanded(child: Text("Vehicle Preference",style: TextStyle(fontWeight: FontWeight.bold),)),
+                  IconButton(onPressed: (){}, icon: const Icon(Icons.more_vert,color: Colors.red,)),
                   //Icon(Icons.more_vert,color: Colors.red,)
                 ],
               ),
@@ -175,15 +173,15 @@ class _PackageInformationState extends State<PackageInformation> {
                   children: [
                     ClipRRect(
                       borderRadius: BorderRadius.circular(8),
-                        child: Image(image: AssetImage('assets/006.PNG'),height: screenHeight * 0.12,width: screenWidth * 0.3,fit: BoxFit.cover,)),
+                        child: Image(image: const AssetImage('assets/006.PNG'),height: screenHeight * 0.12,width: screenWidth * 0.3,fit: BoxFit.cover,)),
                     SizedBox(width: screenWidth * 0.04,),
                     ClipRRect(
                       borderRadius: BorderRadius.circular(8),
-                        child: Image(image: AssetImage('assets/005.JPG'),height: screenHeight * 0.12,width: screenWidth * 0.3,fit: BoxFit.cover)),
+                        child: Image(image: const AssetImage('assets/005.JPG'),height: screenHeight * 0.12,width: screenWidth * 0.3,fit: BoxFit.cover)),
                     SizedBox(width: screenWidth * 0.04,),
                     ClipRRect(
                       borderRadius: BorderRadius.circular(8),
-                        child: Image(image: AssetImage('assets/006.PNG'),height: screenHeight * 0.12,width: screenWidth * 0.3,fit: BoxFit.cover)),
+                        child: Image(image: const AssetImage('assets/006.PNG'),height: screenHeight * 0.12,width: screenWidth * 0.3,fit: BoxFit.cover)),
                   ],
                 ),
               ),

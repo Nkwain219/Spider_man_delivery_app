@@ -1,7 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:spider_man_delivery_app/call.dart';
+import 'package:spider_man_delivery_app/dashboard/call.dart';
 
 class Messages extends StatelessWidget {
   const Messages({super.key});
@@ -14,8 +12,8 @@ class Messages extends StatelessWidget {
       appBar: AppBar(
         leading: IconButton(onPressed: (){
           Navigator.pop(context);
-        }, icon: Icon(Icons.arrow_back_ios_new)),
-        title: Row(
+        }, icon: const Icon(Icons.arrow_back_ios_new)),
+        title: const Row(
           children: [
             CircleAvatar(
               backgroundImage: AssetImage('assets/profile.JPG'),
@@ -28,9 +26,9 @@ class Messages extends StatelessWidget {
           IconButton(onPressed: (){
             Navigator.push(
                 context,
-                MaterialPageRoute(builder: (BuildContext context) => Call()));
-          }, icon: Icon(Icons.phone,color: Colors.red,),),
-          IconButton(onPressed: (){}, icon: Icon(Icons.videocam,color: Colors.red,),),
+                MaterialPageRoute(builder: (BuildContext context) => const Call()));
+          }, icon: const Icon(Icons.phone,color: Colors.red,),),
+          IconButton(onPressed: (){}, icon: const Icon(Icons.videocam,color: Colors.red,),),
           //Icon(Icons.phone,color: Colors.red,),
           //Icon(Icons.videocam,color: Colors.red,),
         ],
@@ -49,8 +47,8 @@ class Messages extends StatelessWidget {
                 borderRadius: BorderRadius.circular(16)
               ),
               child:
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
+                const Padding(
+                  padding: EdgeInsets.all(8.0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -74,8 +72,8 @@ class Messages extends StatelessWidget {
                     borderRadius: BorderRadius.circular(16)
                 ),
                 child:
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
+                const Padding(
+                  padding: EdgeInsets.all(8.0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -89,7 +87,7 @@ class Messages extends StatelessWidget {
                 ),
               ),
             ),
-            Spacer(),
+            const Spacer(),
             Row(
               children: [
                 Container(
@@ -102,7 +100,7 @@ class Messages extends StatelessWidget {
                   child:
                   Row(
                     children: [
-                      Expanded(
+                      const Expanded(
                         child: TextField(
                           decoration: InputDecoration(
                             border: InputBorder.none,
@@ -113,15 +111,15 @@ class Messages extends StatelessWidget {
                       ),
                       Transform.rotate(
                         angle: 120,
-                          child: IconButton(onPressed: (){}, icon: Icon(Icons.file_present,color: Colors.red,))),
-                      IconButton(onPressed: (){}, icon: Icon(Icons.camera_alt_rounded,color: Colors.red,))
+                          child: IconButton(onPressed: (){}, icon: const Icon(Icons.file_present,color: Colors.red,))),
+                      IconButton(onPressed: (){}, icon: const Icon(Icons.camera_alt_rounded,color: Colors.red,))
                     ],
                   ),
                 ),
-                Spacer(),
+                const Spacer(),
                 CircleAvatar(
                   backgroundColor: Colors.red,
-                    child: IconButton(onPressed: (){}, icon: Icon(Icons.settings_voice,color: Colors.white,)))
+                    child: IconButton(onPressed: (){}, icon: const Icon(Icons.settings_voice,color: Colors.white,)))
               ],
             ),
           ],

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:spider_man_delivery_app/packageinformation.dart';
+import 'package:spider_man_delivery_app/dashboard/droplocation.dart';
 
-class DropLocation extends StatelessWidget {
-  const DropLocation({super.key});
+class PickUpLocation extends StatelessWidget {
+  const PickUpLocation({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,8 +13,8 @@ class DropLocation extends StatelessWidget {
         leading: IconButton(onPressed: (){
           Navigator.pop(context);
         },
-            icon: Icon(Icons.arrow_back_ios_new)),
-        title: Text("Drop Location"),
+            icon: const Icon(Icons.arrow_back_ios_new)),
+        title: const Text("Pick Up Location"),
         centerTitle: true,
       ),
       body: Padding(
@@ -22,7 +22,7 @@ class DropLocation extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              Text("Select Pick up location"),
+              const Text("Select Pick up location"),
               SizedBox(height: screenHeight * 0.01,),
               Container(
                 height: screenHeight * 0.04,
@@ -45,7 +45,7 @@ class DropLocation extends StatelessWidget {
               SizedBox(height: screenHeight * 0.01,),
               ClipRRect(
                 borderRadius: BorderRadius.circular(8),
-                child: Image(image: const AssetImage('assets/007.JPG'),
+                child: Image(image: const AssetImage('assets/map.JPG'),
                   height: screenHeight * 0.25 ,fit: BoxFit.cover,width: screenWidth,),
               ),
               SizedBox(height: screenHeight * 0.02,),
@@ -56,9 +56,9 @@ class DropLocation extends StatelessWidget {
                   borderRadius: BorderRadius.circular(8),
                   color: Colors.grey[300],
                 ),
-                child: Expanded(
+                child: const Expanded(
                   child: Padding(
-                    padding: const EdgeInsets.only(left: 8.0),
+                    padding: EdgeInsets.only(left: 8.0),
                     child: TextField(
                       decoration: InputDecoration(
                         border: InputBorder.none,
@@ -76,9 +76,9 @@ class DropLocation extends StatelessWidget {
                   borderRadius: BorderRadius.circular(8),
                   color: Colors.grey[300],
                 ),
-                child: Expanded(
+                child: const Expanded(
                   child: Padding(
-                    padding: const EdgeInsets.only(left: 8.0),
+                    padding: EdgeInsets.only(left: 8.0),
                     child: TextField(
                       decoration: InputDecoration(
                         border: InputBorder.none,
@@ -96,9 +96,9 @@ class DropLocation extends StatelessWidget {
                   borderRadius: BorderRadius.circular(8),
                   color: Colors.grey[300],
                 ),
-                child: Expanded(
+                child: const Expanded(
                   child: Padding(
-                    padding: const EdgeInsets.only(left: 8.0),
+                    padding: EdgeInsets.only(left: 8.0),
                     child: TextField(
                       decoration: InputDecoration(
                         border: InputBorder.none,
@@ -119,7 +119,7 @@ class DropLocation extends StatelessWidget {
                 child:TextButton(onPressed: (){
                   Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (BuildContext context) => const PackageInformation()));
+                      MaterialPageRoute(builder: (BuildContext context) => const DropLocation()));
                 },
                     child:
                     const Text("Next",style: TextStyle(color: Colors.white,letterSpacing: 1,fontSize: 18),)),

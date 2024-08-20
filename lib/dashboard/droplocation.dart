@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:spider_man_delivery_app/droplocation.dart';
+import 'package:spider_man_delivery_app/dashboard/packageinformation.dart';
 
-class PickUpLocation extends StatelessWidget {
-  const PickUpLocation({super.key});
+class DropLocation extends StatelessWidget {
+  const DropLocation({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,8 +13,8 @@ class PickUpLocation extends StatelessWidget {
         leading: IconButton(onPressed: (){
           Navigator.pop(context);
         },
-            icon: Icon(Icons.arrow_back_ios_new)),
-        title: Text("Pick Up Location"),
+            icon: const Icon(Icons.arrow_back_ios_new)),
+        title: const Text("Drop Location"),
         centerTitle: true,
       ),
       body: Padding(
@@ -23,7 +22,7 @@ class PickUpLocation extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              Text("Select Pick up location"),
+              const Text("Select Pick up location"),
               SizedBox(height: screenHeight * 0.01,),
               Container(
                 height: screenHeight * 0.04,
@@ -46,7 +45,7 @@ class PickUpLocation extends StatelessWidget {
               SizedBox(height: screenHeight * 0.01,),
               ClipRRect(
                 borderRadius: BorderRadius.circular(8),
-                child: Image(image: const AssetImage('assets/map.JPG'),
+                child: Image(image: const AssetImage('assets/007.JPG'),
                   height: screenHeight * 0.25 ,fit: BoxFit.cover,width: screenWidth,),
               ),
               SizedBox(height: screenHeight * 0.02,),
@@ -57,9 +56,9 @@ class PickUpLocation extends StatelessWidget {
                   borderRadius: BorderRadius.circular(8),
                   color: Colors.grey[300],
                 ),
-                child: Expanded(
+                child: const Expanded(
                   child: Padding(
-                    padding: const EdgeInsets.only(left: 8.0),
+                    padding: EdgeInsets.only(left: 8.0),
                     child: TextField(
                       decoration: InputDecoration(
                         border: InputBorder.none,
@@ -77,9 +76,9 @@ class PickUpLocation extends StatelessWidget {
                   borderRadius: BorderRadius.circular(8),
                   color: Colors.grey[300],
                 ),
-                child: Expanded(
+                child: const Expanded(
                   child: Padding(
-                    padding: const EdgeInsets.only(left: 8.0),
+                    padding: EdgeInsets.only(left: 8.0),
                     child: TextField(
                       decoration: InputDecoration(
                         border: InputBorder.none,
@@ -97,9 +96,9 @@ class PickUpLocation extends StatelessWidget {
                   borderRadius: BorderRadius.circular(8),
                   color: Colors.grey[300],
                 ),
-                child: Expanded(
+                child: const Expanded(
                   child: Padding(
-                    padding: const EdgeInsets.only(left: 8.0),
+                    padding: EdgeInsets.only(left: 8.0),
                     child: TextField(
                       decoration: InputDecoration(
                         border: InputBorder.none,
@@ -120,7 +119,7 @@ class PickUpLocation extends StatelessWidget {
                 child:TextButton(onPressed: (){
                   Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (BuildContext context) => const DropLocation()));
+                      MaterialPageRoute(builder: (BuildContext context) => const PackageInformation()));
                 },
                     child:
                     const Text("Next",style: TextStyle(color: Colors.white,letterSpacing: 1,fontSize: 18),)),
